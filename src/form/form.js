@@ -78,11 +78,11 @@ const handleFormSubmit = (event) => {
   };
   return (
     <div className='box'> 
-    <div className='inner_box' >
+    <div className='innerbox' >
        <input name='Owner_name' type='text' placeholder='Owner name' onChange={handel}/>
        <input name='phone' type='number' placeholder='Number' onChange={handel}/>
        <input name='pgname' type='text' placeholder='Pg name' onChange={handel}/>
-       <div>
+       <div className='optionbox'>
        <input name='gender_type' type='radio' value={"male"} onClick={handel} />
        <input name='gender_type' type='radio' value={"female"} onClick={handel}/>
        <input name='gender_type' type='radio' value={"unisex"} onClick={handel}/>
@@ -94,7 +94,11 @@ const handleFormSubmit = (event) => {
        <input checked={cleaning}  name='cleaning' type='checkbox'  onClick={handel} />
        <input checked={water}  name='water' type='checkbox'  onClick={handel} />
        <input checked={cctv}  name='cctv' type='checkbox'  onClick={handel} />
+       <div className='uploadbox'>
+        <div>
        <input type='file'  />
+       </div>
+       </div>
        </div>
        </div>
     </div>
