@@ -1,10 +1,40 @@
 .register_form{
-    border: 2px solid red;
+   
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .registerbox{
-    border: 2px solid blue;
+   
     width: fit-content;
+    padding: 12px 48px 0 22px;
+    background-color: #e4e4e4;
+}
+
+.boxnth1{
+    height: 32px;
+   
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+
+}
+
+.boxnth1 >input{
+    border: 0.2px solid #f9b795;
+    border-radius: 2px;
+}
+
+.checkbox_box{
+   
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.checkbox_box >div >label{
+    color: #555555;
+    font-family: monospace;
+    FONT-WEIGHT: 600;
 }

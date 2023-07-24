@@ -1,26 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Slidebutton from '../../atoms/slidebutton'
 import "./register.css"
+import Form from '../../atoms/Form'
 
 function Register() {
+  const [data,setdata]=useState({name:"shantanu",phone:7447556344,pgname:"bharma",city:"pune",area:"hinjewadi",gender:{male:true,female:false,unisex:false}})
+
   return (
-    <div className='register_form' >
-
-      <div className='registerbox'>
-    <div>
-        <input placeholder=' Owner Name'/>
-        <input placeholder='Phone No' />
-        </div>
-        <div>
-        <input placeholder='Pg Name' />
-        <input placeholder='City' />
-        <input placeholder='Area' />
-        </div>
-        <input placeholder='Location' />
-
-
-        </div>
-    </div>
+   <Form data={data} />
   )
 }
 

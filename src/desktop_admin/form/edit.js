@@ -1,8 +1,15 @@
 import React from 'react'
+import Form from '../../atoms/Form'
 
 function Edit() {
+
   return (
-    <div>Edit</div>
+    <>
+    <div>
+        <input/>
+    </div>
+   <Form/>
+   </>
   )
 }
 
