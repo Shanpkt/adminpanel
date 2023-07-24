@@ -3,7 +3,7 @@ import "./slidbutton.css"
 import { useNavigate } from 'react-router-dom'
 
 function Slidebutton() {
-    const [decimal,setdecimal]=useState(true)
+    const [decimal,setdecimal]=useState(false)
     function sliderall(){
         decimal==true?navigate():navigate2()
     }
