@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import "./form.css"
 import axios from 'axios'
+
+
 function Form() {
 const [washin, setIsChecked] = useState(false)
 const [lift, setIslift] = useState(false)
@@ -83,7 +85,11 @@ const handleFormSubmit = (event) => {
        <input name='phone' type='number' placeholder='Number' onChange={handel}/>
        <input name='pgname' type='text' placeholder='Pg name' onChange={handel}/>
        <div className='optionbox'>
+        <div>
+        
        <input name='gender_type' type='radio' value={"male"} onClick={handel} />
+       <label>MALE</label>
+       </div>
        <input name='gender_type' type='radio' value={"female"} onClick={handel}/>
        <input name='gender_type' type='radio' value={"unisex"} onClick={handel}/>
        <input checked={lift}  name='lift' type='checkbox'  onClick={handel} />

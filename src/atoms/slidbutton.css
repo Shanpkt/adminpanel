@@ -1,0 +1,41 @@
+.boxdiv{
+ 
+    display: flex;
+    justify-content: center;
+}
+
+
+.boxslide >label{
+    /* border: 1px solid rgb(90, 71, 71); */
+    background-color: rgb(234 234 234);
+    padding: 2px 22px 8px 22px
+}
+.boxslide{
+    height: 30px;
+   
+    width: fit-content;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+}
+
+.slider{
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #ff6b34;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    top: 0px;
+    width: 50%;
+    border: 1px solid #f74300;
+    /* background-color: white; */
+    border-radius: 5px;
+    color: white;
+    transition: 0.7s;
+}
+
+.slider_slide{
+    left: 50%;
+}
