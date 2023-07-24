@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./slidbutton.css"
 import { useNavigate } from 'react-router-dom'
 
@@ -7,6 +7,12 @@ function Slidebutton() {
     function sliderall(){
         decimal==true?navigate():navigate2()
     }
+
+   useEffect(() => {
+
+    sliderall()
+   
+   }, [])
  const navi=useNavigate()
  function navigate(){
     setdecimal(false)
