@@ -5,6 +5,7 @@ import Edit from './edit'
 import { Route, Routes } from 'react-router-dom'
 
 function Resedit() {
+    
 
   return (
     <div>

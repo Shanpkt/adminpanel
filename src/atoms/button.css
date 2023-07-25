@@ -1,0 +1,12 @@
+.buttonclick{
+    width: fit-content;
+    height: 30px;
+    background-color: orangered;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    padding: 0px 20px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

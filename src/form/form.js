@@ -88,7 +88,7 @@ const handleFormSubmit = (event) => {
         <div>
         
        <input name='gender_type' type='radio' value={"male"} onClick={handel} />
-       <label>MALE</label>
+       <label>MALE</label> 
        </div>
        <input name='gender_type' type='radio' value={"female"} onClick={handel}/>
        <input name='gender_type' type='radio' value={"unisex"} onClick={handel}/>

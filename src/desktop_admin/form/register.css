@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    flex-direction: column;
 }
 
 .registerbox{
@@ -37,4 +38,38 @@
     color: #555555;
     font-family: monospace;
     FONT-WEIGHT: 600;
+}
+
+.editdropbox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.drop_list{
+    box-shadow: 1px 1px 1px rgb(235, 235, 235);
+    position: absolute;
+    padding: 0 30px 0 30px;
+    background-color: white;
+    top: 50px;
+   
+}
+
+.drop_list > div{
+    border: 1px solid rgb(222, 221, 221);
+    display: flex;
+    gap: 10px;
+}
+.drop_list >div :nth-child(1){
+    margin: 0;
+    color: black;
+    font-family: emoji;
+    font-weight: initial;
+}
+
+.drop_list >div :nth-child(2){
+    margin: 0;
+    color: gray;
+    font-family: monospace;
+    font-weight: initial;
 }
